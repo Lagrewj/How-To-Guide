@@ -1,0 +1,27 @@
+Start: Sun, 17 May 2015 11:45:00 -0800
+End: Sun, 17 May 2015 19:30:00  -0800
+Tasks: Researched PDO and began outlining project
+
+Start: Mon, 18 May 2015 08:14:00 -0800
+End: Mon, 18 May 2015 11:50:00  -0800
+Tasks: Found bootstrap template for styling ideas, began layout
+
+Start: Tue, 19 May 2015 14:45:00 -0800
+End: Tue, 19 May 2015 18:43:00  -0800
+Tasks: Began code for video store using PDO. Started home.html 
+
+Start: Wed, 20 May 2015 16:14:00 -0800
+End: Wed, 20 May 2015 21:35:00  -0800
+Tasks: Found many resources for PDO information. Worked on html files.
+
+Start: Thurs, 21 May 2015 13:45:00 -0800
+End: Thurs, 21 May 2015 16:40:00  -0800
+Tasks: Finalized html files and screenshots. Testing on OSU servers.
+
+Start: Fri, 22 May 2015 07:10:00 -0800
+End: Fri, 22 May 2015 12:30:00  -0800
+Tasks: Fixed errors, pushed GitHub windows repo to website, uploaded assignment
+
+
+
+
