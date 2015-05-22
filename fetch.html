@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>How to guide using PDO in PHP</title>
+
+    <!-- Bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- sidebar css -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+					<li>
+                    <a href="difference.html">PDO vs. MySQLI</a>
+                </li>
+                <li>
+                    <a href="connect.html">Connecting to Database</a>
+                </li>
+				<li>
+                    <a href="error.html">Error Handling</a>
+                </li>
+				<li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="update.html">Update</a>
+                </li>
+                <li>
+                    <a href="delete.html">Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary</a>
+                </li>
+                           </ul>
+        </div>
+<!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+						<h1>How-To-Guide: Video Database with PDO</h1>
+                        <h2>Fetching Data with PDO</h2>
+						<p>If we want to fetch data from our video database, we can use PDO in order to do this. These will be a series of SELECT queries
+						that will use PDO in order to fetch the data from the databse. Below are examples from the video store code of fetches. </p>                     
+                        <hr>
+                        <img src="Fetch.jpg" width="50%" height="50%" alt="Fetch PDO"/>
+						<hr>
+                        <h3>Fetching category from Video Store Database</h3>
+						<hr>
+                        <img src="Fetch_category.jpg" width="50%" height="50%" alt="Fetch Category PDO"/>
+						<hr>
+						<h4>PDO Fetch Code</h4>
+						<hr>
+                        <img src="Fetch_type.jpg" width="50%" height="50%" alt="Fetch code PDO"/>
+						<hr>
+						<p><code>PDO::Fetch_ASSOC</code> is the type of fetch used in our example. This type of fetch returns an array.
+						Other types of fetch examples are listed below and can be further researched on the summary page.</p>
+						<ul style="list-style-type:square">
+							<li><code>PDO::FETCH_BOTH</code></li>
+							<li><code>PDO::FETCH_BOUND</code></li>
+							<li><code>PDO::FETCH_CLASS</code></li>
+							<li><code>PDO::FETCH_INTO</code></li>
+							<li><code>PDO::FETCH_LAZY</code></li>
+							<li><code>PDO::FETCH_NAMED</code></li>
+							<li><code>PDO::FETCH_NUM</code></li>
+							<li><code>PDO::FETCH_OBJ</code></li>
+						</ul>
+                        <p>Next page is the summary of what we have covered.</p>						
+						<hr>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Side Menu</a><a href="summary.html" class="btn btn-default" id="menu-toggle">Next</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

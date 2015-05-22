@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>How to guide using PDO in PHP</title>
+
+    <!-- Bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- sidebar css -->
+    <link href="css/simple-sidebar.css" rel="stylesheet" media="screen">
+    
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="home.html">
+                        Home
+                    </a>
+				<li>
+                    <a href="difference.html">PDO vs. MySQLI</a>
+                </li>
+                </li>
+                <li>
+                    <a href="connect.html">Connecting to Database</a>
+                </li>
+				<li>
+                    <a href="error.html">Error Handling</a>
+                </li>
+				<li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="update.html">Update</a>
+                </li>
+                <li>
+                    <a href="delete.html">Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary</a>
+                </li>
+                           </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Summary of PDOs using Video Store Inventory Example</h1>
+						<p>In this short tutorial, we have covered many topics that just brush the surface of using PDO in PHP. Below is the link to the example database. </p>
+                        <hr>
+                        <h3>Link to Video Database</h3>
+						<ul>
+							<li>
+								<a href="http://web.engr.oregonstate.edu/~lagrewj/PDO/video_store.php">Video Database with PDO</a>
+							</li>
+						</ul>
+                        <hr> 
+                        <h3>PDO Resource List</h3>
+                     	<ul>
+                			<li>
+                   		 		<a href="http://php.net/manual/en/book.pdo.php">PHP offical manual: PDO</a>
+                			</li>	
+                			<li>
+                   	 			<a href="http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers">PDO Tutorial for Developers</a>
+                			</li>
+                			<li>
+                   				 <a href="http://www.virtualsecrets.com/pdo-encryption-mysql-from-php.html">PDO Encryption</a>
+               				 </li>
+							 <li>
+								 <a href="http://mrbool.com/how-to-make-database-operations-with-pdo-in-php/27443">PDO Tutorial</a>
+							 </li>
+							 <li>
+								 <a href="http://code.tutsplus.com/tutorials/why-you-should-be-using-phps-pdo-for-database-access--net-12059">Why PDO</a>
+							 </li>
+                           </ul> 
+							<hr>
+						  <h4>Other Resources used for this project</h4>
+						  <ul>
+							<li>
+							<a href="http://getbootstrap.com/2.3.2/getting-started.html">Bootstrap</a>
+							</li>
+						  </ul>
+							<hr>						  
+                          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Side Menu</a>
+						  
+						  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

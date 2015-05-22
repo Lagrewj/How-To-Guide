@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>How to guide using PDO in PHP</title>
+
+    <!-- Bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- sidebar css -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+					<li>
+                    <a href="difference.html">PDO vs. MySQLI</a>
+                </li>
+                <li>
+                    <a href="connect.html">Connecting to Database</a>
+                </li>
+				<li>
+                    <a href="error.html">Error Handling</a>
+                </li>
+				<li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="update.html">Update</a>
+                </li>
+                <li>
+                    <a href="delete.html">Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary</a>
+                </li>
+                           </ul>
+        </div>
+	       <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+						<h1>How-To-Guide: Video Database with PDO</h1>
+                        <h2>Why use PDO?</h2>
+                        <p>There are three main benefits of PDO:</p>
+						<ol>
+						<li>Robust API</li>
+						<li>Connect to Multiple databases</li>
+						<li>Prepared Statments</li>
+						</ol>
+						<h3>Robust API </h3>
+						<p>The PDO is a more robust API that can be used regardless of the driver you are using. Many people are a little 
+						intimidated to use the PDO, not because it is difficult to use an API, because it is not, but because the mysql API
+						is very easy to use and people end up getting used to it.
+						<h3>Connecting to Multiple Databases</h3>
+						<p>PDOs allow the user to connect to many different databases using a single PHP page. As we will see how to connect
+						to databases using PDO on the next page, essentially you just make multiple connections to many databases.</p>
+						<h3>Prepared Statements</h3>
+						<p>Many of the more mature databases support the concept of prepared statements. What are they? They can be thought of 
+						as a kind of compiled template for the SQL that an application wants to run, that can be customized using variable parameters.
+						he query only needs to be parsed (or prepared) once, but can be executed multiple times with the same or different parameters.
+						Lastly, the parameters to prepared statements don't need to be quoted as the driver automatically handles this.</p>
+                        <h4>PDO and MySQLi: A Few Differences</h4>
+                        <img src="difference_table.jpg" width="50%" height="50%" alt="PDO vs MySQLi"/> 
+                        <br>
+						<h5>More about mySQLi</h5>
+						<p>The mysqli extension, or as it is sometimes known, the MySQL improved extension, was developed to take advantage of new 
+						features found in MySQL systems versions 4.1.3 and newer. The mysqli extension is included with PHP versions 5 and later.MySQLi 
+						is a replacement for the mysql functions, with object-oriented and procedural versions. It has support for prepared statements.</p>
+                        <hr>
+                        <p>The next page will discuss how to connect using PDO.</p>
+                        <br>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Side Menu </a><a href="connect.html" class="btn btn-default" id="menu-toggle"> Next</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>How to guide using PDO in PHP</title>
+
+    <!-- Bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- sidebar css -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+					<li>
+                    <a href="difference.html">PDO vs. MySQLI</a>
+                </li>
+                <li>
+                    <a href="connect.html">Connecting to Database</a>
+                </li>
+				<li>
+                    <a href="error.html">Error Handling</a>
+                </li>
+				<li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="update.html">Update</a>
+                </li>
+                <li>
+                    <a href="delete.html">Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary</a>
+                </li>
+                           </ul>
+        </div>
+		
+		<!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>How-To-Guide: Video Database with PDO</h1>
+                        <hr>
+                        <h4>PDO Error Modes</h4>
+						<p>The try/catch block encloses the connect code, which will throw a PDO exception oject if there is an error.</p>
+						<hr>
+						<img src="Error.jpg" width="50%" height="50%" alt="Error PDO"/> 
+						<hr>
+						<h5>PDO Error Mode Options:</h5>
+                        <ul style="list-style-type:square">
+							<li><code>PDO::ERRMODE_SILENT</code></li>
+ 							<li><code>PDO::ERRMODE_WARNING</code></li>
+ 							<li><code>PDO::ERRMODE_EXCEPTION</code></li>
+						</ul>
+						<p>PDO offers 3 different error handling strategies, to fit the type of application being developed .<code>PDO::ERRMODE_SILENT</code> 
+						is the default mode that sets the error code for us to inspect. <code>PDO::ERRMODE_WARNING</code> sets the error code but will also send 
+						out a warning. This is mainly used during the testing or debugging process. <code>PDO::ERRMODE_EXCEPTION</code> will set the error code, throw 
+						a PDO exception and set its properties to reflect the error code and error information</p>                     
+                        <hr>
+                        <p>Onward to the next section in which we will learn to insert with PDO...</p>
+                        <br>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Side Menu</a><a href="insert.html" class="btn btn-default" id="menu-toggle">Next</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

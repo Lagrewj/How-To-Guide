@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>How to guide using PDO in PHP</title>
+
+    <!-- Bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- sidebar css -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+				<li>
+                    <a href="difference.html">PDO vs. MySQLI</a>
+                </li>
+                <li>
+                    <a href="connect.html">Connecting to Database</a>
+                </li>
+				<li>
+                    <a href="error.html">Error Handling</a>
+                </li>
+				<li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="update.html">Update</a>
+                </li>
+                <li>
+                    <a href="delete.html">Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary</a>
+                </li>
+                           </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>How-To-Guide: Video Database with PDO</h1>
+                        <hr> 
+                        <h3>Insert with PDO</h3>
+                        <p>Now we will discus inserting with PDO. PDO allows us to use binding parameters which allows us to not have to stick to the parameter order.</p> 
+                        <br>
+                        <p>Below is the function that will insert a video into the database using PDO. Notice the variables are the elements for the database.</p>
+                        <hr>
+                        <img src="Insert.jpg" width="50%" height="50%" alt="Insert PDO"/> 
+                        <hr>
+                        <p><code>$data</code> is a variable that is set to an array of the database elements. Then <code>$sqlString</code> is initialized   
+                        to the prepared statment for the PDO. <code>$sql</code> is being set to the object <code>$this</code>, which takes in   
+                        <code>$sqlString</code>. 
+                        <p>For error handling purposes it is enclosed in a try/catch block.</p>
+                        <hr>
+						<h4>Insert new Video</h4>
+						<p>Uing our example database, the user can now insert a new video by fillling out the form and clicking 'add video'.</p>
+						<hr>
+						<img src="Insert_ex1.jpg" width="50%" height="50%" alt="Insert Video PDO"/>
+						<hr>
+						<p>Now the video is added to the database.</p>
+						<img src="video_store.jpg" width="50%" height="50%" alt="Video Store PDO"/>
+						<hr>
+                        <p>The next page involves updating using PDO.</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Side Menu</a><a href="update.html" class="btn btn-default" id="menu-toggle">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

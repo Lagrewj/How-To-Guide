@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>How to guide using PDO in PHP</title>
+
+    <!-- Bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- sidebar css -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+				<li>
+                    <a href="difference.html">PDO vs. MySQLI</a>
+                </li>
+                <li>
+                    <a href="connect.html">Connecting to Database</a>
+                </li>
+				<li>
+                    <a href="error.html">Error Handling</a>
+                </li>
+				<li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="update.html">Update</a>
+                </li>
+                <li>
+                    <a href="delete.html">Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary</a>
+                </li>
+                           </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 style="color:blue">How to Guide: Using PDO with our Video Store Inventory</h1>
+                        <br>
+                        <h3>What's in this guide?</h3>
+                        <p>In this guide, we will learn what PDOs are, why we use them and how to use them using our Video Store Inventory 
+						assignment as the example. Covered here, we will discuss the advantages of PDO over mySQLI, how to connect, insert, update, delete
+						handle errors. At the end you will be able to have a basic understanding of PDOs and how to implement them in your code.</p>
+                        </p>
+                        <p>BThere is a lot of information online about PDOs and on the summary page at the end, I will provide some resource links that will be helpful for more information.  
+                        To follow along with the guide, a link to the active video store inventory database will be available.</p>
+                        <br>
+                        <h3>First, what does PDO stand for?</h3>
+                        <p>PDO stands for PHP Data Object. This means that it is a way for the PHP programming langugage to speak with the MySQL database.  Therefore PDO is a type of 
+                        application programming interface (API) used to connect PHP to a MySQL database. Altogether, there are three API's available to connect  
+                        PHP to MySQL databases--the other two are just to use MySQL and lastly using MySQLi.</p>
+                        <hr> 
+                        
+                        <p>Click next to learn about the differences between PDO and MySQLi...</p>
+                        <br>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Side Menu</a><a href="difference.html" class="btn btn-default" id="menu-toggle"> Next</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
