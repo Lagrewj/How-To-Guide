@@ -20,7 +20,7 @@ Tasks: Finalized html files and screenshots. Testing on OSU servers.
 
 Start: Fri, 22 May 2015 07:10:00 -0800
 End: Fri, 22 May 2015 12:30:00  -0800
-Tasks: Fixed errors, pushed GitHub windows repo to website, uploaded assignment
+Tasks: Fixed errors, pushed GitHub windows repo to website, uploaded assignment, finished log file
 
 
 
